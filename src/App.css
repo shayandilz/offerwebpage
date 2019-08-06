@@ -1,0 +1,230 @@
+/* ------------------------- FONT ------------------------- */
+@font-face{
+  font-family: "IranSans";
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/IRANSansWeb.ttf') format('truetype')
+}
+/* ------------------------- General Styling ------------------------- */
+body, html {
+  height: 100%;
+  direction: rtl
+}
+h4, p{
+  text-align: center;
+  direction: rtl;
+  font-family: 'IranSans'!important;
+}
+h4{
+  font-weight: 600
+}
+/* ------------------------- First Banner ------------------------- */
+.banner1{
+  
+  background: url(./images/final1.jpg) no-repeat;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 65%;
+  background-size: 100%;
+}
+/* ------------------------- Second Banner ------------------------- */
+.banner2{
+  background: url(./images/final2.jpg) no-repeat;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 65%;
+  background-size: 100%;
+  overflow: hidden;
+}
+/* ------------------------- Header and SMS Field ------------------------- */
+.col-form > h4 {
+  margin-top: 115px;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+form{
+  margin-bottom: 65px
+}
+input{
+  height: 70px;
+  width: 37%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  background-color: #ececee;
+  direction: ltr;
+  padding-left: 10px
+}
+
+button{
+  height: 70px;
+  width: 121px;
+  padding-top: 6px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  background-color: #840b1a;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'IranSans'
+}
+::-webkit-input-placeholder{
+  text-align: center;
+  background-color: #ececee;
+  direction: ltr
+}
+input[type="text"]::-webkit-input-placeholder {
+  text-align: center;
+}
+/* ------------------------- Download Section ------------------------- */
+#imgDownload{
+  width: 380px;
+  height: 130px;
+  margin: auto;
+  display: grid;
+  margin-top: 25px;
+}
+/* ------------------------- About Us ------------------------- */
+.information{
+  height: auto;
+  background-color: #d5d5d5
+}
+.offerlogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+/* ------------------------- Responsive ------------------------- */
+
+@media screen and (max-width: 992px){
+  #imgDownload{
+    width: 360px;
+    height:120px;
+  }
+  form{
+    margin-bottom: 0px;
+  }
+  .col-form > h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px){
+  .banner1{
+    background: url(./images/final.jpg) no-repeat;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 65%;
+    background-size: 100%;
+  }
+  .banner2{
+    background: url(./images/finall.jpg) no-repeat;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 65%;
+    background-size: 100%;
+  }
+  #imgDownload{
+    width: 230px;
+    height: 80%;
+    margin-top: 20px;
+    padding-bottom: 7px;
+  }
+  .col-form > h4 {
+    margin-top: 20px;
+    margin-bottom: 7px;
+    font-size: 17px;
+  }
+  form{
+    margin-bottom: 15px;
+  }
+  input {
+    height: 45px;
+    width: 40%;
+  }
+  button {
+    height: 45px;
+  }
+  
+}
+@media (max-width: 576px){
+  #imgDownload{
+    width: 130px;
+    height: 38px;
+    margin-top: 5px;
+    padding-bottom: 0px
+  }
+  input {
+    height: 30px;
+    width: 45%;
+  }
+  button {
+    height: 30px;
+    width: 78px;
+    font-size: 8px;
+  }
+  .col-form > h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  ::-webkit-input-placeholder{
+    font-size: 12px
+  }
+  .offerlogo{
+    width: 25%;
+  }
+}
+@media (max-width: 375px){
+  #imgDownload{
+    width: 105px;
+    height: 35px;
+    margin-top: 0px;
+    margin-top: 7px;
+  }
+  form{
+    margin-bottom: 0px;
+  }
+  .col-form > h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  input {
+    height: 32px;
+    width: 50%;
+  }
+  button {
+    height: 30px;
+    width: 75px;
+  }
+  
+}
+@media (max-width: 320px){
+  #imgDownload{
+    width: 90px;
+    height: 33px;
+    margin-top: 0px;
+    margin-top: 4px;
+  }
+  .col-form > h4 {
+    margin-top: 6px;
+    font-size: 12px;
+  }
+  input {
+    height: 28px;
+  }
+  button {
+    height: 28px;
+  }
+  
+}
